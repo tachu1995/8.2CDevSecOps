@@ -50,7 +50,7 @@ User.find({ username: "admin@snyk.io" }).exec(function (err, users) {
     console.log("no admin");
     new User({
       username: "admin@snyk.io",
-      password: "SuperSecretPassword",
+      password: "SuperSecretPassword123",
     }).save(function (err, user, count) {
       if (err) {
         console.log("error saving admin user");
